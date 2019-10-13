@@ -1,0 +1,25 @@
+Fourth Tone, Soft Chromatic (\selectlanguage{greek}Βου\selectlanguage{english} = E)\hfill {\footnotesize AGES DCS}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  \time 1/4 e4 | \time 3/4 g4 g g | \time 2/4 a4 g | \time 4/4 g8( f) e4 f g | \time 3/4 a4 g f | e4 r
+  e | \time 4/4 g4 g f g | \time 6/4 a4 g g8( f) e4 f g | \time 3/4 a4 g g | b4 a g | g8( a g4) f | \time 2/4 e4 r |
+  \time 3/4 b'4 b a | \time 2/4 g4 f | \time 3/4 a4 g r | \time 2/4 e4 f | \time 4/4 g4( a) g f | \time 3/4 a4 g r |
+  a4 a a | \time 2/4 a4 g | \time 4/4 a4 f g g | \time 3/4 b4 a g | \time 5/4 f2 e4 r
+  e | \time 4/4 f2 e4( d) | \time 2/4 e4 f | \time 3/4 g4 g g | \time 2/4 b4 a | \time 3/4 g8( a g4) f | \time 4/4 e1 \bar "|."
+}
+\addlyrics {
+  Your Mar -- tyr, O Lord, was wor -- thi -- ly a -- ward -- ed by You
+  the crown of in -- cor -- rup -- tion, in that he con -- test -- ed for You our Im -- mor -- tal God.
+  Since he pos -- sessed Your pow -- er, he de -- feat -- ed the ty -- rants,
+  dash -- ing the de -- mon's pow -- er -- less dis -- plays of de -- fi -- ance.
+  O Christ God, at his fer -- vent en -- treat -- ies, save our souls.
+}
+\end{lilypond}
