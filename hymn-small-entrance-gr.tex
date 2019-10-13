@@ -1,0 +1,22 @@
+\selectlanguage{greek}Ἦχος βʹ\selectlanguage{english} (\selectlanguage{greek}Δι\selectlanguage{english} = G)\hfill {\footnotesize Green Book (1982), p. 24}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c'' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  %%\key c \major
+  g4 g f g | a4 a g2 | g4 g b( a) | \time 5/4 g( f) e8( f e4) g | \time 4/4 a4( g f8 g e f g1) |
+  b2 b4 b | b4 a a g | g4. f8 g4 a | b2 a4 g | g2
+  a4 f | a4 g g f | f4 e e2 \bar "|."
+}
+\addlyrics {
+  Δεῦ -- τε προ -- σκυ -- νή -- σω -- μεν καὶ προ -- σπέ -- σω -- μεν Χρι -- στῷ.
+  Σῶ -- σον ἡ -- μᾶς Υἱ -- ὲ Θε -- οῦ, ὁ ἀ -- να -- στὰς ἐκ νε -- κρῶν,
+  ψάλ -- λον -- τάς σοι, Ἀλ -- λη -- λού -- ϊ -- α.
+}
+\end{lilypond}

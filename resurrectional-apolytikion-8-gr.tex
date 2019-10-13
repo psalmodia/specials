@@ -1,0 +1,26 @@
+\selectlanguage{greek}Ἦχος πλ. δʹ\selectlanguage{english} (\selectlanguage{greek}Γα\selectlanguage{english} = F)\hfill {\footnotesize Lawrence's Hymnal (1997), p. 126}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  \key f \major
+  \time 1/4 f4 | \time 3/4 bes a g | \time 5/4 a4 g2 d4( e) | \time 4/4 f4( g) f( e) | f2.
+  f4 | \time 3/4 bes a g | \time 5/4 a4 g2 d4( e) | \time 4/4 f4( g) f( e) | f1 |
+  bes2 a4 g | g4. g8 g4 g | f8( e) d4 e f | g2
+  g4 a | bes4 bes a bes | d4 c bes a | g1
+  \time 6/4 a2 g2 d4( e) | \time 4/4 f4( g) f4( e) | f1 \bar "|."
+}
+\addlyrics {
+  Ἐξ ὕ -- ψους κα -- τῆλ -- θες ὁ εὔ -- σπλαγ -- χνος,
+  τα -- φὴν κα -- τε -- δέ -- ξω τρι -- ή -- με -- ρον,
+  ἵ -- να ἡ -- μᾶς ἐ -- λευ -- θε -- ρώ -- σῃς τῶν πα -- θῶν.
+  Ἡ ζω -- ὴ καὶ ἡ Ἀ -- νά -- στα -- σις ἡ -- μῶν,
+  Κύ -- ρι -- ε δό -- ξα σοι.
+}
+\end{lilypond}

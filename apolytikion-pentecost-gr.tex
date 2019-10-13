@@ -1,0 +1,26 @@
+\selectlanguage{greek}Ἦχος πλ. δʹ\selectlanguage{english} (\selectlanguage{greek}Γα\selectlanguage{english} = F)\hfill {\footnotesize Green Book (1982), p. 115}
+\begin[staffsize=21]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  \key f \major
+  \time 3/4 f4 f g | a4 g f | \time 5/4 a4 g2 d4( e) | \time 4/4 f( g) f( e) | f2
+  f4 g | g4( a) a2( a4) f g a | bes2 a4 g | \time 6/4 a2 g
+  g4 a | bes4 a g g f | a2 g d4( e) | \time 4/4 f( g) f( e) | \time 6/4 f2.
+  d4 e f | \time 4/4 g2. f4 | g4 a bes4 bes | \time 6/4 a g a2 g2 |
+  f4 a g2 d4( e) | \time 4/4 f4( g) f ( e)| f1 \bar "|."
+}
+\addlyrics {
+  Εύ -- λο -- γη -- τός εἶ Χρι -- στὲ ὁ Θε -- ος ἡ -- μῶν
+  ὁ παν -- σό -- φους τοὺς ἁ -- λι -- εῖς ἁ -- να -- δεί -- ξας
+  κα -- τα -- πέμ -- ψας αὐ -- τοῖς τὸ Πνεῦ -- μα τὸ ἅ -- γι -- ον
+  καὶ δι᾽ αὐ -- τῶν τῆν οἰ -- κου -- μέ -- νην σα -- γη -- νεύ -- σας
+  φι -- λάν -- θρω -- πε δό -- ξα Σοι.
+  }
+\end{lilypond}

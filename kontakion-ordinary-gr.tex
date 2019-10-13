@@ -1,0 +1,32 @@
+\selectlanguage{greek}Ἦχος βʹ\selectlanguage{english} (\selectlanguage{greek}Δι\selectlanguage{english} = G)\hfill {\footnotesize After Lawrence's Hymnal (1997), p. 224}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  \time 2/4 e f | \time 6/4 g g g g fis g | \time 4/4 a2 g4 a | \time 3/4 b2 a4 | \time 5/4 g2.
+  f4 g | \time 6/4 a4 g g e f g | \time 4/4 b2 a4 g | \time 3/4 g2 f4 | e2. |
+  a2 g4 | \time 6/4 a2 f4. f8 g4 a | b4 a g f e f | g2.
+  g4 g2 | \time 6/4 b4 b b a g fis | \time 4/4 g4.
+  fis8 g4 a | c4 b a g | g2
+  g4 g | b2 a4 g | \time 3/4 g2 f4 | e2. |
+  \time 6/4 g2 f8( e) d4 e f | f4( g) g2. g4 | a4( g) f8( e) d4 e f | \time 5/4 f4( g) g2. |
+  \time 3/4 g4 g g | \time 4/4 a4 f g a | \time 6/4 b1
+  g4 g | \time 4/4 b4 a g fis | \time 3/4 g4.( f8) e4 | \time 9/4 f2( g4 aes2 g1) \bar "|."
+}
+\addlyrics {
+  Προ -- στα -- σί -- α τῶν Χρι -- στι -- α -- νῶν ἀ -- κα -- ταί -- σχυν -- τε,
+  με -- σι -- τεί -- α, πρὸς τὸν Ποι -- η -- τὴν ἀ -- με -- τά -- θε -- τε,
+  μὴ πα -- ρί -- δῃς, ἁ -- μαρ -- τω -- λῶν δε -- ή -- σε -- ων φω -- νάς,
+  ἀλ -- λὰ πρό -- φθα -- σον, ὡς ἀ -- γα -- θή,
+  εἰς τὴν βο -- ή -- θει -- αν ἡ -- μῶν,
+  τῶν πι -- στῶς κραυ -- γα -- ζόν -- των σοι·
+  Τά -- χυ -- νον εἰς πρεσ -- βεί -- αν, καὶ σπεῦ -- σον εἰς ἱ -- κε -- σί -- αν,
+  ἡ προ -- στα -- τεύ -- ου -- σα ἀ -- εί,
+  Θε -- ο -- τό -- κε, τῶν τι -- μών -- των σε.}
+\end{lilypond}

@@ -1,0 +1,26 @@
+Plagal Fourth Tone (\selectlanguage{greek}Γα\selectlanguage{english} = F)\hfill {\footnotesize Green Book (1982), p. 115}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  \key f \major
+  \time 3/4 f4 f g | \time 4/4 a4( g f a) g2 d4( e) | f( g) f( e) | f2
+  f4 g | g4 a a2( a4) f g a | bes2 a4 g | \time 6/4 a2 g
+  g4 a | \time 5/4 bes4 a g g f | \time 6/4 a2 g d4( e) | \time 4/4 f( g) f e | \time 6/4 f2.
+  d4 e( f) | \time 4/4 g2. f4 | g4 a bes4 bes | \time 6/4 a g a2( g2) |
+  f4( a) g2 d4 e | \time 4/4 f4( g) f ( e)| f1 \bar "|."
+}
+\addlyrics {
+  O bles -- sed are You, O Christ our God,
+  Who by send -- ing down the Ho -- ly Spi -- rit up -- on them
+  made the fish -- er -- men wise and through them il -- lu -- mined the world.
+  And to You the u -- ni -- verse was ev -- er drawn.
+  All glo -- ry to You, O Lord.
+}
+\end{lilypond}
