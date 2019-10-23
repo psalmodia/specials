@@ -1,0 +1,30 @@
+\selectlanguage{greek}Ἦχος βʹ\selectlanguage{english} (\selectlanguage{greek}Δι\selectlanguage{english} = G)\hfill {\footnotesize Green Book (1982), pp.~81--82}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c'' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  \key c \major
+  \time 3/4 g4 g g | \time 4/4 e4( f g a) | g2 g4 g | \time 5/4 a2 g4 f2 |
+  \time 2/4 f4 f | \time 3/4 a4 g g | \time 5/4 e8( f g a) f4 g2 |
+  \time 3/4 a4 g g | g d g | \time 5/4 g8( a b4) a4 f2 |
+  \time 3/4 f4 g a | b4 a g | \time 5/4 g8( a g4) f e2 |
+  \time 4/4 b'4 b b2 | b4 g a b | c4 b a a| \time 3/4 g4 g g | a4 g a | \time 5/4 b4( c) a g2 |
+  \time 4/4 b4 b b a | \time 6/4 a4 g g e f g | \time 3/4 b4 a g | \time 5/4 g8( a g4) f e2 |
+  e4 f g e f | \time 4/4 g2 g4 g | \time 3/4 a4 g g | e8( f g a) f4 | g2. \bar "|."
+}
+\addlyrics {
+  Ὅ -- τε κα -- τῆλ -- θες πρὸς τὸν θά -- να -- τον,
+  ἡ Ζω -- ὴ ἡ ἀ -- θά -- να -- τος,
+  τό -- τε τὸν ᾍ -- δην ἐ -- νέ -- κρω -- σας
+  τῇ ἀ -- στρα -- πῇ τῆς Θε -- ό -- τη -- τος,
+  ὅ -- τε δὲ καὶ τοὺς τεθ -- νε -- ῶ -- τας ἐκ τῶν κα -- ταχ -- θο -- νί -- ων ἀ -- νέ -- στη -- σας,
+  πᾶ -- σαι αἱ Δυ -- νά -- μεις τῶν ἐ -- που -- ρα -- νί -- ων ἐ -- κραύ -- γα -- ζον·
+  Ζω -- ο -- δό -- τα Χρι -- στὲ ὁ Θε -- ὸς ἡ -- μῶν δό -- ξα σοι.
+}
+\end{lilypond}
