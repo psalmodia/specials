@@ -1,0 +1,27 @@
+Fourth Tone, Soft Chromatic (\selectlanguage{greek}Βου\selectlanguage{english} = E)\hfill {\footnotesize Anastassiou (1987), pp.~191--192}
+\begin[staffsize=22]{lilypond}
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+    }
+  }
+\relative c'' {
+  \textLengthOn
+  \override Staff.TimeSignature #'stencil = ##f
+  g4 g g g | a4 g g g | e4 f g2 |
+  r4 g g g | b2 a4 g | g4 f e2 |
+  r2 e4 e | f4 f f f | g2 g4 g | a2 g4 g | \time 3/4 e8( f g a) f4 | g2. |
+  g4 g g | a2 g4 | g4 g g | b4 a g | g8( a g4) f | e2. |
+  \time 4/4 g4 g g g | a2 g4 a | b2. g4 | b4 a g f | g8( a g4) f2 | e1 \bar "|."
+
+}
+\addlyrics {
+  Ὡς τῶν αἰχ -- μα -- λώ -- των ἐ -- λευ -- θε -- ρω -- τής,
+  καὶ τῶν πτω -- χῶν ὑ -- πε -- ρα -- σπι -- στής,
+  ἀ -- σθε -- νούν -- των ἰ -- α -- τρός, βα -- σι -- λέ -- ων ὑ -- πέρ -- μα -- χος,
+  Τρο -- παι -- ο -- φό -- ρε Με -- γα -- λο -- μάρ -- τυς Γε -- ώρ -- γι -- ε,
+  πρέ -- σβευ -- ε Χρι -- στῷ τῷ Θε -- ῷ,
+  σω -- θῆ -- ναι τὰς ψυ -- χὰς ἡ -- μῶν.
+}
+\end{lilypond}

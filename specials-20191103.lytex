@@ -61,10 +61,19 @@ Wisdom! Stand and attend!
 
 \clearpage
 \begin{center}
-{\large Apolytikion for the Martyrs (English)}
+  {\large Apolytikion for the Martyrs (English)} \\
+  {\footnotesize\textit{Akepsimas, Joseph, and Aeithalas}}
 \end{center}
 \vspace{-1em}
 \input{apolytikion-martyr-en.tex}
+
+\clearpage
+\begin{center}
+  {\large Apolytikion for St. George (Greek)} \\
+  {\footnotesize\textit{Consecration of the Church of the Holy Great-Martyr George in Lydda, when his Holy Body was Placed in it.}}
+\end{center}
+\vspace{-1em}
+\input{apolytikion-st-george-gr.tex}
 
 \clearpage
 \begin{center}
